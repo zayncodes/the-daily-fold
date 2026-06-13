@@ -109,7 +109,7 @@ function ArticlePage() {
                   <span className="meta mr-2">{article.dateline}</span>
                 </p>
               )}
-              {article.body.map((p, i) => (
+              {article.body.map((p: string, i: number) => (
                 <p key={i} className={`mb-5 ${i === 0 ? "drop-cap" : ""}`}>
                   {p}
                 </p>
