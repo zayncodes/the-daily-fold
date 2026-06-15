@@ -13,7 +13,7 @@ export function Masthead({ compact = false }: { compact?: boolean }) {
         </div>
         <div className="col-span-12 md:col-span-6 text-center">
           <Link to="/" className="inline-block">
-            <h1 className={`masthead ${compact ? "text-5xl md:text-6xl" : "text-6xl md:text-8xl"}`}>
+            <h1 className={`masthead whitespace-nowrap ${compact ? "text-4xl md:text-6xl" : "text-5xl md:text-7xl lg:text-8xl"}`}>
               The Chronicle
             </h1>
           </Link>
