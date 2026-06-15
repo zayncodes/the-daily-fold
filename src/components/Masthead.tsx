@@ -39,14 +39,6 @@ export function Masthead({ compact = false }: { compact?: boolean }) {
         </div>
       </div>
 
-      <nav className="flex flex-wrap items-center justify-center gap-6 py-4 meta border-b border-[color:var(--color-rule)]">
-        <Link to="/" className="link-underline">Front Page</Link>
-        <Link to="/archive" className="link-underline">Archive</Link>
-        <a href="#national" className="link-underline">National</a>
-        <a href="#international" className="link-underline">World</a>
-        <a href="#feature" className="link-underline">Features</a>
-        <a href="#sports" className="link-underline">Sports</a>
-      </nav>
     </header>
   );
 }
