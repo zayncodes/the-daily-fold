@@ -179,16 +179,6 @@
   /* Broadsheet measure — wider than a typical web column to evoke a real paper. */
   .broadsheet { max-width: 1440px; margin-inline: auto; }
 
-  .page-fold {
-    position: relative;
-  }
-  .page-fold::after {
-    content: "";
-    position: absolute; inset: 0;
-    background: linear-gradient(90deg, transparent 0%, oklch(0.2 0.02 60 / 0.06) 49.8%, oklch(0.2 0.02 60 / 0.12) 50%, transparent 50.2%);
-    pointer-events: none;
-  }
-
   .link-underline {
     background-image: linear-gradient(currentColor, currentColor);
     background-position: 0 100%;

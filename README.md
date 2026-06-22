@@ -1,13 +1,18 @@
 # The Chronicle — a self-publishing digital newspaper
 
-A premium, print-inspired digital newspaper that **publishes itself once a day**. Every morning a scheduled job pulls the day's most important headlines, has Claude rewrite them into editorial newspaper prose, and commits a new dated edition. The site reads like a real broadsheet — masthead, multi-column front page, drop caps, pull quotes, page-turn navigation — and keeps a growing archive of past editions.
+A premium, print-inspired digital newspaper that **publishes itself once a day**. Every morning a scheduled job pulls the day's most important headlines, has Claude rewrite them into long-form editorial prose, and commits a new dated edition. The site reads like a real broadsheet you **flip through, page by page** — masthead, multi-column layout, drop caps, pull quotes, full-page page-turn navigation — and keeps a growing archive of past editions.
 
-Each daily edition has six stories:
+Each daily edition is a **ten-page newspaper**:
 
-- **2 × National** (India)
-- **2 × International** (world)
-- **1 × Feature** (rotates: science / technology / health / environment)
-- **1 × Sports**
+| Page | Section | Page | Section |
+| --- | --- | --- | --- |
+| 1 | Front Page (index) | 6 | Science & Technology |
+| 2 | National News | 7 | Sports |
+| 3 | International | 8 | Features & Human Interest |
+| 4 | State & Metro | 9 | Opinion & Editorials |
+| 5 | Business & Economy | 10 | Facts, Lifestyle & Living |
+
+Pages 2–8 are news (long articles rewritten from real headlines); page 9 is AI-authored opinion (leader, column, letters); page 10 is a miscellany of facts, a quiz, a puzzle, reviews, a health tip, a fact-check and weather. The **Front Page** (page 1) is derived as a teaser index into the rest. Every page carries interactive **extras** (quiz/puzzle reveals, quotes, fun facts).
 
 ## How it works
 
@@ -105,11 +110,15 @@ Netlify works the same way (Nitro auto-detects it on build). For Cloudflare Page
 ```
 scripts/generate-edition.mjs      The daily content engine (fetch → rewrite → write)
 src/data/editions/*.json          One file per published day (the archive)
-src/lib/articles.ts               Loads + sorts editions; helpers used across the app
+src/lib/articles.ts               Data model + loader: editions, pages, extras, helpers
 src/components/Masthead.tsx       Masthead, date, edition no., weather, nav
+src/components/PageChrome.tsx     Page-turn animation, 1–10 page strip, prev/next, keys + swipe
+src/components/ArticleBody.tsx    Shared long-form article renderer (columns, drop caps)
+src/components/Extras.tsx         Interactive extras (quiz, puzzle, quote, review, weather…)
 src/components/Reveal.tsx         Scroll-reveal animation wrapper (reduced-motion aware)
-src/routes/index.tsx              Front page
-src/routes/article.$slug.tsx      Article spread (page-turn, swipe, keyboard nav)
+src/routes/index.tsx              Page 1 — Front Page (lead + "What's Inside" index)
+src/routes/page.$n.tsx            Pages 2–10 — section pages (articles + extras)
+src/routes/article.$slug.tsx      Focused single-article reading view (share/permalink)
 src/routes/archive.tsx            Past editions + search
 .github/workflows/daily-edition.yml   The daily cron
 ```

@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useMemo, useState } from "react";
 import { Masthead } from "@/components/Masthead";
 import { Reveal } from "@/components/Reveal";
-import { editions, formatLongDate } from "@/lib/articles";
+import { editions, formatLongDate, getAllArticles, frontPageData } from "@/lib/articles";
 
 export const Route = createFileRoute("/archive")({
   head: () => ({
@@ -10,7 +10,6 @@ export const Route = createFileRoute("/archive")({
       { title: "Archive — The Chronicle" },
       { name: "description", content: "Browse and search previous editions of The Chronicle." },
       { property: "og:title", content: "Archive — The Chronicle" },
-      { property: "og:description", content: "Browse and search previous editions of The Chronicle." },
     ],
   }),
   component: ArchivePage,
@@ -22,16 +21,17 @@ function ArchivePage() {
   const results = useMemo(() => {
     const term = q.trim().toLowerCase();
     if (!term) return null;
-    const hits: { edition: string; slug: string; headline: string; category: string; date: string }[] = [];
+    const hits: { slug: string; headline: string; category: string; date: string; edition: string }[] = [];
     for (const ed of editions) {
-      for (const a of ed.articles) {
+      for (const a of getAllArticles(ed)) {
         if (
           a.headline.toLowerCase().includes(term) ||
           a.section.toLowerCase().includes(term) ||
           a.category.toLowerCase().includes(term) ||
+          a.summary.toLowerCase().includes(term) ||
           ed.dateISO.includes(term)
         ) {
-          hits.push({ edition: ed.number, slug: a.slug, headline: a.headline, category: `${a.category} · ${a.section}`, date: ed.dateISO });
+          hits.push({ slug: a.slug, headline: a.headline, category: `${a.category} · ${a.section}`, date: ed.dateISO, edition: ed.number });
         }
       }
     }
@@ -55,7 +55,7 @@ function ArchivePage() {
             <input
               value={q}
               onChange={(e) => setQ(e.target.value)}
-              placeholder="Try ‘rupee’, ‘sports’, or ‘2026-06’"
+              placeholder="Try 'rupee', 'cricket', or '2026-06'"
               className="w-full border-b-2 border-[color:var(--color-ink)] bg-transparent py-3 text-xl focus:outline-none placeholder:text-[color:var(--color-ink-soft)] placeholder:italic"
               style={{ fontFamily: "var(--font-serif)" }}
             />
@@ -64,7 +64,7 @@ function ArchivePage() {
 
         {results ? (
           <section className="border-t border-[color:var(--color-ink)] py-10">
-            <div className="meta mb-6">{results.length} result{results.length === 1 ? "" : "s"} for “{q}”</div>
+            <div className="meta mb-6">{results.length} result{results.length === 1 ? "" : "s"} for "{q}"</div>
             <ul className="divide-y divide-[color:var(--color-rule)]">
               {results.map((r, i) => (
                 <li key={i} className="py-5 grid grid-cols-12 gap-4">
@@ -84,29 +84,34 @@ function ArchivePage() {
           </section>
         ) : (
           <section className="border-t border-[color:var(--color-ink)] py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {editions.map((ed, i) => (
-              <Reveal as="article" key={ed.number} delay={i * 0.06} className="paper-card border border-[color:var(--color-rule)] p-6 flex flex-col">
-                <div className="meta flex justify-between">
-                  <span>Vol. {ed.volume} · No. {ed.issue}</span>
-                  <span>Ed. {ed.number}</span>
-                </div>
-                <div className="mt-4 text-center border-y border-[color:var(--color-ink)] py-4">
-                  <div className="masthead text-2xl md:text-3xl">The Chronicle</div>
-                  <div className="meta mt-2">{formatLongDate(ed.dateISO)}</div>
-                </div>
-                <h3 className="mt-5 text-xl font-black tracking-tight leading-snug">
-                  {ed.articles[0].headline}
-                </h3>
-                <p className="mt-2 text-sm italic text-[color:var(--color-ink-soft)]" style={{ fontFamily: "var(--font-serif)" }}>
-                  {ed.articles[0].subhead}
-                </p>
-                <div className="mt-auto pt-5">
-                  <Link to="/article/$slug" params={{ slug: ed.articles[0].slug }} className="meta link-underline">
-                    Open this edition →
-                  </Link>
-                </div>
-              </Reveal>
-            ))}
+            {editions.map((ed, i) => {
+              const lead = frontPageData(ed).lead ?? getAllArticles(ed)[0];
+              return (
+                <Reveal as="article" key={ed.number} delay={i * 0.06} className="paper-card border border-[color:var(--color-rule)] p-6 flex flex-col">
+                  <div className="meta flex justify-between">
+                    <span>Vol. {ed.volume} · No. {ed.issue}</span>
+                    <span>Ed. {ed.number}</span>
+                  </div>
+                  <div className="mt-4 text-center border-y border-[color:var(--color-ink)] py-4">
+                    <div className="masthead text-2xl md:text-3xl">The Chronicle</div>
+                    <div className="meta mt-2">{formatLongDate(ed.dateISO)}</div>
+                  </div>
+                  {lead && (
+                    <>
+                      <h3 className="mt-5 text-xl font-black tracking-tight leading-snug">{lead.headline}</h3>
+                      <p className="mt-2 text-sm italic text-[color:var(--color-ink-soft)]" style={{ fontFamily: "var(--font-serif)" }}>
+                        {lead.subhead}
+                      </p>
+                      <div className="mt-auto pt-5">
+                        <Link to="/article/$slug" params={{ slug: lead.slug }} className="meta link-underline">
+                          Open this edition →
+                        </Link>
+                      </div>
+                    </>
+                  )}
+                </Reveal>
+              );
+            })}
           </section>
         )}
       </div>

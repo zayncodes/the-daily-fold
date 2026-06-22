@@ -4,128 +4,483 @@
   "issue": "42",
   "dateISO": "2026-06-22",
   "weather": { "temp": "28°C", "conditions": "Clear Skies", "city": "New Delhi" },
-  "quote": {
-    "text": "History is a set of lies agreed upon.",
-    "author": "Napoléon"
-  },
-  "articles": [
+  "quote": { "text": "History is a set of lies agreed upon.", "author": "Napoléon" },
+  "pages": [
     {
-      "id": "a1",
-      "slug": "monsoon-surplus-deccan",
-      "category": "National",
-      "section": "Governance",
-      "headline": "Monsoon Surplus: Infrastructure Resilience in the Deccan Plateau",
-      "subhead": "New architectural standards for flood-resilient urban centres are tested as record rainfall hits the southern states.",
-      "summary": "As the southwest monsoon delivers a fifteen-percent surplus across the plateau, civic engineers in Hyderabad, Pune and Bengaluru are quietly rewriting the rulebook on porous pavement, drainage easements and elevated transit corridors.",
-      "author": "Arundhati Iyer",
-      "readMinutes": 8,
-      "dateISO": "2026-06-22",
-      "dateline": "HYDERABAD —",
-      "pullQuote": "The plateau is no longer engineered for the rain it received; it is engineered for the rain it will.",
-      "body": [
-        "Long before the first cloudburst arrived this season, the city of Hyderabad had begun replacing kilometres of impervious paving with permeable basalt aggregate. The intervention, modest in cost and almost invisible to the pedestrian, has produced one of the year's quietest infrastructural victories: a thirty-eight percent reduction in flash flooding across the old quarter.",
-        "Civic engineers describe the work in the cautious language of a profession unaccustomed to public attention. \"We are not solving the monsoon,\" said municipal commissioner Ravi Menon. \"We are giving it somewhere to go.\" The remark, delivered over a desk strewn with hydrological charts, captures a shift in posture among India's urban planners — from resistance to accommodation.",
-        "Across the Deccan, the philosophy is taking architectural form. In Pune, elevated transit corridors now double as catchment surfaces, channelling runoff into newly excavated retention basins beneath public parks. In Bengaluru, the long-derelict Bellandur lake has been re-engineered as the centrepiece of a stormwater commons, its banks softened with native sedge and reinforced with woven jute.",
-        "Critics caution that the visible work obscures harder questions. Land tenure, encroachment, and the political economy of construction permits remain unresolved. Yet for the millions who once dreaded the season, the early data suggests a city that is, at last, listening to the rain.",
-        "The coming weeks will test these interventions against the heaviest forecasts in a decade. If the plateau holds, it will not be because the monsoon was tamed — but because, for the first time in a generation, it was finally understood."
+      "n": 2,
+      "slug": "national",
+      "title": "National News",
+      "kind": "news",
+      "articles": [
+        {
+          "id": "n1",
+          "slug": "monsoon-surplus-deccan",
+          "category": "National News",
+          "section": "Governance",
+          "headline": "Monsoon Surplus: Infrastructure Resilience in the Deccan Plateau",
+          "subhead": "New architectural standards for flood-resilient urban centres are tested as record rainfall hits the southern states.",
+          "summary": "As the southwest monsoon delivers a fifteen-percent surplus across the plateau, civic engineers in Hyderabad, Pune and Bengaluru are quietly rewriting the rulebook on porous pavement, drainage easements and elevated transit corridors.",
+          "author": "Arundhati Iyer",
+          "readMinutes": 7,
+          "dateISO": "2026-06-22",
+          "dateline": "HYDERABAD —",
+          "pullQuote": "The plateau is no longer engineered for the rain it received; it is engineered for the rain it will.",
+          "body": [
+            "Long before the first cloudburst arrived this season, the city of Hyderabad had begun replacing kilometres of impervious paving with permeable basalt aggregate. The intervention, modest in cost and almost invisible to the pedestrian, has produced one of the year's quietest infrastructural victories: a thirty-eight percent reduction in flash flooding across the old quarter.",
+            "Civic engineers describe the work in the cautious language of a profession unaccustomed to public attention. \"We are not solving the monsoon,\" said municipal commissioner Ravi Menon. \"We are giving it somewhere to go.\" The remark, delivered over a desk strewn with hydrological charts, captures a shift in posture among India's urban planners — from resistance to accommodation.",
+            "Across the Deccan, the philosophy is taking architectural form. In Pune, elevated transit corridors now double as catchment surfaces, channelling runoff into newly excavated retention basins beneath public parks. In Bengaluru, the long-derelict Bellandur lake has been re-engineered as the centrepiece of a stormwater commons, its banks softened with native sedge and reinforced with woven jute.",
+            "The numbers behind the effort are substantial. The three states have, between them, committed close to eleven thousand crore rupees over four years — a figure that would have been politically unthinkable a decade ago, when drainage was a line item rather than a manifesto. What changed, officials concede privately, was not the engineering but the electorate: a generation of voters who now measure a government by whether their streets flood.",
+            "Critics caution that the visible work obscures harder questions. Land tenure, encroachment, and the political economy of construction permits remain unresolved. A retention basin is only as useful as the wetland it did not replace, and several of the new commons sit on ground that was, until recently, informal housing.",
+            "Yet for the millions who once dreaded the season, the early data suggests a city that is, at last, listening to the rain. Hospital admissions for water-borne illness in the monitored wards have fallen for two consecutive years, and the insurance industry — that most unsentimental of observers — has begun, tentatively, to lower premiums.",
+            "The coming weeks will test these interventions against the heaviest forecasts in a decade. If the plateau holds, it will not be because the monsoon was tamed — but because, for the first time in a generation, it was finally understood."
+          ]
+        },
+        {
+          "id": "n2",
+          "slug": "parliament-data-bill",
+          "category": "National News",
+          "section": "Parliament",
+          "headline": "Data Protection Bill Returns to Parliament Amid Industry Pushback",
+          "subhead": "Revised provisions on cross-border transfers reopen a debate the government had hoped was settled.",
+          "summary": "The redrafted legislation, two years in the making, introduces stricter penalties for breach disclosure while loosening consent norms for state agencies — a compromise satisfying neither civil society nor the technology sector.",
+          "author": "Vikram Sharma",
+          "readMinutes": 6,
+          "dateISO": "2026-06-22",
+          "dateline": "NEW DELHI —",
+          "body": [
+            "The Personal Data Protection Bill, in its third public iteration, arrived in the Lok Sabha this week to a chamber that has come to treat the document with weary familiarity. The latest draft, circulated late on Tuesday evening, contains nineteen substantive changes from the version tabled in the winter session.",
+            "Most significant is the recalibration of cross-border data transfer rules. Where the previous draft had permitted transfer to a curated list of jurisdictions, the new text reverses the presumption: all transfers are allowed unless specifically restricted. Industry bodies, which had lobbied intensely for the change, greeted it with measured approval.",
+            "Yet the same draft sharpens penalties for failure to disclose breaches, raising the ceiling from fifteen to fifty crore rupees, and extends the disclosure window from seventy-two hours to forty-eight. \"It is a bill that asks more of companies and offers less to citizens,\" said advocate Apar Gupta, a digital-rights campaigner who has followed the legislation since its first draft.",
+            "The provision drawing the sharpest criticism is the broadened exemption for state agencies, which may now process personal data for loosely defined purposes of national interest without the consent that binds private firms. Opposition members called it a two-tier system; the minister called it a necessary one.",
+            "Business has its own anxieties. Smaller technology firms, lacking the compliance departments of their larger rivals, warn that the forty-eight-hour disclosure window is punishing in practice, and that the bill's true effect will be to entrench the incumbents it claims to discipline.",
+            "The legislation is expected to be referred to a parliamentary standing committee before its second reading. Few in the chamber expect that the third draft will be the last."
+          ]
+        }
+      ],
+      "extras": [
+        { "type": "funfact", "title": "By the numbers", "text": "India lays roughly 28 kilometres of new highway every single day — one of the fastest road-building rates anywhere in the world." },
+        { "type": "quote", "text": "The Constitution is not a mere lawyers' document; it is a vehicle of life, and its spirit is always the spirit of the age.", "author": "B. R. Ambedkar" }
       ]
     },
     {
-      "id": "a2",
-      "slug": "parliament-data-bill",
-      "category": "National",
-      "section": "Politics",
-      "headline": "Data Protection Bill Returns to Parliament Amid Industry Pushback",
-      "subhead": "Revised provisions on cross-border transfers reopen a debate the government had hoped was settled.",
-      "summary": "The redrafted legislation, two years in the making, introduces stricter penalties for breach disclosure while loosening consent norms for state agencies — a compromise satisfying neither civil society nor the technology sector.",
-      "author": "Vikram Sharma",
-      "readMinutes": 6,
-      "dateISO": "2026-06-22",
-      "dateline": "NEW DELHI —",
-      "body": [
-        "The Personal Data Protection Bill, in its third public iteration, arrived in the Lok Sabha this week to a chamber that has come to treat the document with weary familiarity. The latest draft, circulated late on Tuesday evening, contains nineteen substantive changes from the version tabled in the winter session.",
-        "Most significant is the recalibration of cross-border data transfer rules. Where the previous draft had permitted transfer to a curated list of jurisdictions, the new text reverses the presumption: all transfers are allowed unless specifically restricted. Industry bodies, which had lobbied intensely for the change, greeted it with measured approval.",
-        "Yet the same draft sharpens penalties for failure to disclose breaches, raising the ceiling from fifteen to fifty crore rupees, and extends the disclosure window from seventy-two hours to forty-eight. \"It is a bill that asks more of companies and offers less to citizens,\" said advocate Apar Gupta, founder of the Internet Freedom Foundation.",
-        "The legislation is expected to be referred to a parliamentary standing committee before its second reading. Few in the chamber expect that the third draft will be the last."
+      "n": 3,
+      "slug": "international",
+      "title": "International",
+      "kind": "news",
+      "articles": [
+        {
+          "id": "i1",
+          "slug": "eurozone-policy-shift",
+          "category": "International",
+          "section": "Europe",
+          "headline": "Eurozone Policy Shift: Implications for Asian Trade",
+          "subhead": "The European Central Bank's pivot toward sustained tightening reverberates across export-dependent economies from Seoul to Singapore.",
+          "summary": "An unexpectedly hawkish statement from Frankfurt has compressed the spread between euro and yen yields, forcing Asian central banks to recalculate their own paths in real time.",
+          "author": "Lena Hartmann",
+          "readMinutes": 6,
+          "dateISO": "2026-06-22",
+          "dateline": "FRANKFURT —",
+          "body": [
+            "When Christine Lagarde stepped to the lectern on Thursday afternoon, markets were expecting reassurance. What they received instead was a careful, deliberate restatement of the bank's commitment to a tightening trajectory — and a single sentence, almost buried in the prepared remarks, that has rewritten next quarter's forecasts.",
+            "\"The Governing Council does not see, in the present data, conditions warranting a pause,\" Madame Lagarde said. Within minutes, the euro had gained nearly a percent against the dollar; within hours, the yen had begun what currency strategists were already calling an orderly retreat.",
+            "For Asia's export economies, the shift is consequential. A stronger euro increases the price of Asian-manufactured goods in European markets, while a weaker yen amplifies the competitive pressure on Korean and Taiwanese exporters who price in dollars but compete with Japanese counterparts.",
+            "The mechanism is technical but the stakes are not. Roughly a fifth of East Asian manufacturing output is ultimately destined for European consumers, and even a modest change in relative prices ripples through supply chains that were built on the assumption of stability.",
+            "The Bank of Japan, which has long resisted intervention, may now find its hand forced. The Bank of Korea, already preparing a difficult statement of its own, has scheduled an unscheduled briefing for next Tuesday.",
+            "The chessboard, as one Tokyo strategist put it, has been rearranged in a single sentence — and the players in Asia did not move a piece."
+          ]
+        },
+        {
+          "id": "i2",
+          "slug": "pacific-reordering",
+          "category": "International",
+          "section": "Asia-Pacific",
+          "headline": "The Quiet Reordering of the Pacific",
+          "subhead": "A new web of regional agreements is redrawing the map of influence across the world's largest ocean.",
+          "summary": "Away from the headlines, a cluster of island states has begun negotiating collectively on fisheries, shipping and undersea cables — and the great powers are paying attention.",
+          "author": "Marcus Teaiwa",
+          "readMinutes": 5,
+          "dateISO": "2026-06-22",
+          "dateline": "SUVA —",
+          "body": [
+            "For most of the modern era, the Pacific's island nations have been spoken about rather than to. This week, in a conference hall in Suva, that grammar began to change. Eleven states, representing a scattering of territory across a third of the planet's surface, announced a common negotiating bloc.",
+            "The agenda is unglamorous and therefore serious: fishing quotas, the routing of undersea data cables, and the carbon accounting of shipping lanes. Each is a domain in which small states, acting alone, have little leverage and, acting together, suddenly have a great deal.",
+            "The great powers have noticed. Diplomatic missions that once treated the region as a refuelling stop have expanded their staff; aid packages have been announced with conspicuous speed.",
+            "What the islands want, their negotiators insist, is not patronage but parity — a seat at the table proportionate not to their population but to the ocean they steward.",
+            "Whether the bloc holds will depend on the oldest question in diplomacy: whether shared interest can survive the arrival of competing suitors bearing gifts."
+          ]
+        }
+      ],
+      "extras": [
+        { "type": "onthisday", "entries": [
+          { "year": "1633", "text": "Galileo Galilei is forced to recant his support for heliocentrism before the Roman Inquisition." },
+          { "year": "1941", "text": "Operation Barbarossa begins as Axis forces invade the Soviet Union." },
+          { "year": "1969", "text": "The Cuyahoga River catches fire, galvanising the modern environmental movement." }
+        ] },
+        { "type": "quote", "text": "We are not makers of history. We are made by history.", "author": "Martin Luther King Jr." }
       ]
     },
     {
-      "id": "a3",
-      "slug": "rupee-resilience-corridor",
-      "category": "International",
-      "section": "Economy",
-      "headline": "The Rupee's Resilience in a Shifting Global Corridor",
-      "subhead": "Bilateral trade agreements with emerging markets strengthen domestic currency against western volatility.",
-      "summary": "While the dollar wavers under recalibrated Federal Reserve guidance, a quiet web of rupee-denominated trade settlements with Russia, the UAE and Indonesia has begun to anchor the currency in unexpected ways.",
-      "author": "V. Sharma",
-      "readMinutes": 5,
-      "dateISO": "2026-06-22",
-      "dateline": "MUMBAI —",
-      "body": [
-        "The rupee closed the week at 82.4 against the dollar, a level that would have seemed implausible eighteen months ago. The currency's stability, analysts now agree, is not the product of intervention but of architecture.",
-        "Since 2024, the Reserve Bank has quietly negotiated rupee-settlement protocols with twenty-three trading partners. The agreements, modest individually, have begun to compound. Roughly eleven percent of India's bilateral trade now bypasses the dollar entirely — a figure that would have read as ideological a decade ago and reads as pragmatic today.",
-        "The implications extend beyond the trading floor. Indian exporters report shorter settlement cycles; importers, narrower hedging costs. For the central bank, the architecture provides a buffer against the kind of currency contagion that has lately rattled emerging markets from Ankara to Buenos Aires.",
-        "Not all observers are sanguine. The arrangements depend on a delicate balance of trade with each partner, and persistent surpluses or deficits could destabilise the framework. For now, however, the rupee's quiet confidence is a story worth telling slowly."
+      "n": 4,
+      "slug": "local",
+      "title": "State & Metro",
+      "kind": "news",
+      "articles": [
+        {
+          "id": "l1",
+          "slug": "delhi-ring-rail-reawakens",
+          "category": "State & Metro",
+          "section": "Delhi",
+          "headline": "Delhi's Ring Rail Reawakens After Three Decades",
+          "subhead": "A long-dormant colonial-era loop returns to service, promising relief to a city straining at its seams.",
+          "summary": "The 35-kilometre circular line, all but abandoned since the 1990s, has been electrified and folded into the metro network — a rare instance of a city recovering infrastructure it had forgotten it owned.",
+          "author": "Pooja Nair",
+          "readMinutes": 5,
+          "dateISO": "2026-06-22",
+          "dateline": "NEW DELHI —",
+          "body": [
+            "For thirty years the Ring Rail ran nearly empty, a ghost service threading the capital's industrial backlots while the city built flyovers above it. This week, refurbished and electrified, it carried more passengers in a single morning than it had in the whole of the previous decade.",
+            "The revival cost a fraction of a new line. The right of way already existed; the stations, though derelict, still stood. \"We did not build a railway,\" said a transport official. \"We remembered one.\"",
+            "Planners hope the loop will draw commuters off the city's choked arterial roads, connecting neighbourhoods that the radial metro lines had stitched to the centre but never to one another.",
+            "Not everyone is persuaded. Residents along the corridor worry about noise and the fate of the informal markets that grew up in the railway's long sleep. The authority has promised consultation; the markets have heard such promises before.",
+            "Still, on opening morning, the platforms were full — and for a city that measures hope in minutes saved, that was its own kind of argument."
+          ]
+        },
+        {
+          "id": "l2",
+          "slug": "mumbai-coastal-road-final-mile",
+          "category": "State & Metro",
+          "section": "Mumbai",
+          "headline": "Mumbai's Coastal Road Opens Its Final Mile",
+          "subhead": "The decade-long project reaches completion, reshaping the western shoreline and the daily commute.",
+          "summary": "The last stretch of the reclaimed expressway has opened to traffic, cutting a notorious journey from ninety minutes to under twenty — and reigniting an old argument about the sea the city took to build it.",
+          "author": "Farhan Contractor",
+          "readMinutes": 4,
+          "dateISO": "2026-06-22",
+          "dateline": "MUMBAI —",
+          "body": [
+            "The final mile of the Coastal Road opened on Saturday with the muted ceremony of a project too long delayed for triumph. The expressway, much of it built on land reclaimed from the Arabian Sea, now runs the length of the western shore.",
+            "For commuters, the change is immediate and dramatic: a drive that once consumed ninety minutes in monsoon traffic can now be made in under twenty. For the fishing communities of the Koli, whose grounds the reclamation displaced, the arithmetic is less kind.",
+            "Engineers point to the seawalls and interchanges as a feat of coastal construction; ecologists point to the intertidal zone that is no longer there. Both are correct, which is the difficulty.",
+            "The city, characteristically, has already moved on to arguing about what to build next."
+          ]
+        }
+      ],
+      "extras": [
+        { "type": "funfact", "title": "Did you know?", "text": "Mumbai's suburban rail carries over 7 million passengers a day — more than the entire population of many countries." },
+        { "type": "weather", "city": "Mumbai", "temp": "31°C", "conditions": "Humid, passing showers" }
       ]
     },
     {
-      "id": "a4",
-      "slug": "eurozone-policy-shift",
-      "category": "International",
-      "section": "Europe",
-      "headline": "Eurozone Policy Shift: Implications for Asian Trade",
-      "subhead": "The European Central Bank's pivot toward sustained tightening reverberates across export-dependent economies from Seoul to Singapore.",
-      "summary": "An unexpectedly hawkish statement from Frankfurt has compressed the spread between euro and yen yields, forcing Asian central banks to recalculate their own paths in real time.",
-      "author": "Lena Hartmann",
-      "readMinutes": 7,
-      "dateISO": "2026-06-22",
-      "dateline": "FRANKFURT —",
-      "body": [
-        "When Christine Lagarde stepped to the lectern on Thursday afternoon, markets were expecting reassurance. What they received instead was a careful, deliberate restatement of the bank's commitment to a tightening trajectory — and a single sentence, almost buried in the prepared remarks, that has rewritten next quarter's forecasts.",
-        "\"The Governing Council does not see, in the present data, conditions warranting a pause,\" Madame Lagarde said. Within minutes, the euro had gained nearly a percent against the dollar; within hours, the yen had begun what currency strategists were already calling an orderly retreat.",
-        "For Asia's export economies, the shift is consequential. A stronger euro increases the price of Asian-manufactured goods in European markets, while a weaker yen amplifies the competitive pressure on Korean and Taiwanese exporters who price in dollars but compete with Japanese counterparts.",
-        "The Bank of Japan, which has long resisted intervention, may now find its hand forced. The Bank of Korea, already preparing a difficult statement of its own, has scheduled an unscheduled briefing for next Tuesday. The chessboard, as one Tokyo strategist put it, has been rearranged in a single sentence."
+      "n": 5,
+      "slug": "business",
+      "title": "Business & Economy",
+      "kind": "news",
+      "articles": [
+        {
+          "id": "b1",
+          "slug": "rupee-resilience-corridor",
+          "category": "Business & Economy",
+          "section": "Currency",
+          "headline": "The Rupee's Resilience in a Shifting Global Corridor",
+          "subhead": "Bilateral trade agreements with emerging markets strengthen the domestic currency against western volatility.",
+          "summary": "While the dollar wavers under recalibrated Federal Reserve guidance, a quiet web of rupee-denominated trade settlements with Russia, the UAE and Indonesia has begun to anchor the currency in unexpected ways.",
+          "author": "V. Sharma",
+          "readMinutes": 5,
+          "dateISO": "2026-06-22",
+          "dateline": "MUMBAI —",
+          "body": [
+            "The rupee closed the week at 82.4 against the dollar, a level that would have seemed implausible eighteen months ago. The currency's stability, analysts now agree, is not the product of intervention but of architecture.",
+            "Since 2024, the Reserve Bank has quietly negotiated rupee-settlement protocols with twenty-three trading partners. The agreements, modest individually, have begun to compound. Roughly eleven percent of India's bilateral trade now bypasses the dollar entirely — a figure that would have read as ideological a decade ago and reads as pragmatic today.",
+            "The implications extend beyond the trading floor. Indian exporters report shorter settlement cycles; importers, narrower hedging costs. For the central bank, the architecture provides a buffer against the kind of currency contagion that has lately rattled emerging markets from Ankara to Buenos Aires.",
+            "Not all observers are sanguine. The arrangements depend on a delicate balance of trade with each partner, and persistent surpluses or deficits could destabilise the framework. A settlement system, after all, is only as stable as the goodwill that underwrites it.",
+            "For now, however, the rupee's quiet confidence is a story worth telling slowly."
+          ]
+        },
+        {
+          "id": "b2",
+          "slug": "small-town-startup-boom",
+          "category": "Business & Economy",
+          "section": "Enterprise",
+          "headline": "The Quiet Boom in India's Small-Town Startups",
+          "subhead": "Cheaper bandwidth and returning talent are seeding companies far from the metros.",
+          "summary": "From Indore to Coimbatore, a new generation of founders is building globally and living locally — and venture capital, belatedly, is following them home.",
+          "author": "Sneha Reddy",
+          "readMinutes": 4,
+          "dateISO": "2026-06-22",
+          "dateline": "INDORE —",
+          "body": [
+            "The cliché of the Indian startup — a Bengaluru office, a foosball table, a runway measured in months — is quietly being rewritten in cities that rarely make the business pages.",
+            "In Indore, a logistics company serving rural pharmacies has crossed a hundred crore in revenue without opening a metro office. In Coimbatore, an agricultural-sensor firm exports to three continents. Their founders share a profile: educated in the metros, returned to the towns, and unwilling to pay the rents of either coast.",
+            "What made it possible was unglamorous: fibre-optic cable, cheaper than ever, and a remote-work culture that survived the pandemic that birthed it.",
+            "Venture capital, ever a follower disguised as a visionary, has begun to notice. Several funds have opened scouting offices in tier-two cities — a sentence that would have been a punchline five years ago."
+          ]
+        }
+      ],
+      "extras": [
+        { "type": "markets", "items": [
+          { "name": "Sensex", "value": "78,412", "change": "+0.6%" },
+          { "name": "Nifty 50", "value": "23,905", "change": "+0.5%" },
+          { "name": "USD / INR", "value": "82.40", "change": "-0.1%" },
+          { "name": "Gold (10g)", "value": "₹74,210", "change": "+0.3%" }
+        ] },
+        { "type": "funfact", "title": "Market lore", "text": "The term 'bull market' may come from the way a bull thrusts its horns up, while a bear swipes its paws down." }
       ]
     },
     {
-      "id": "a5",
-      "slug": "consciousness-variable",
-      "category": "Feature",
-      "section": "Science & Ethics",
-      "headline": "The Consciousness Variable",
-      "subhead": "Recent breakthroughs in neural mapping suggest a biological basis for subjective experience, challenging centuries of Cartesian philosophy.",
-      "summary": "A team at the Max Planck Institute has published the most granular map yet of the brain's claustrum — a region long suspected of orchestrating conscious experience. The findings, modest in tone and momentous in implication, reopen a question philosophers had quietly retired.",
-      "author": "Dr. Silas Thorne",
-      "readMinutes": 12,
-      "dateISO": "2026-06-22",
-      "dateline": "LEIPZIG —",
-      "pullQuote": "If consciousness has an address in the cortex, it raises a question philosophy has long avoided: what else has it?",
-      "body": [
-        "The claustrum is a thin, irregular sheet of grey matter pressed between the insular cortex and the basal ganglia. For more than a century it has been described, with some embarrassment, as a structure in search of a function. This week, in a paper of unusual ambition, a research team has proposed that the function in question may be consciousness itself.",
-        "The work, led by Dr. Helena Vogt of the Max Planck Institute for Cognitive and Brain Sciences, combines high-resolution diffusion imaging with optogenetic stimulation in non-human primates. The result is a map of unprecedented detail: a network of bidirectional projections linking nearly every region of the cortex through a single, thread-like organ.",
-        "The implication is striking. If conscious experience requires the binding of disparate sensory and cognitive streams into a single, unified field, the claustrum is uniquely positioned to perform the binding. Stimulate it, and a primate's behaviour shifts in ways that resemble nothing so much as a transient suspension of awareness.",
-        "Philosophers have been cautious in their response. \"A correlate is not a cause,\" noted Professor Daniel Hyland of Oxford. \"But this is the most precise correlate we have ever had.\" The qualification is gentle; the concession, considerable.",
-        "The paper closes, characteristically, with a list of open questions. Among them: whether the claustrum's role is constitutive or merely facilitative; whether its function differs between species; and whether, in time, its activity might be measured non-invasively in humans. Each question carries the quiet weight of a research programme.",
-        "For now, the field has its map. What it will draw upon that map remains, as ever, a matter of patience."
+      "n": 6,
+      "slug": "science-tech",
+      "title": "Science & Technology",
+      "kind": "news",
+      "articles": [
+        {
+          "id": "s1",
+          "slug": "consciousness-variable",
+          "category": "Science & Technology",
+          "section": "Neuroscience",
+          "headline": "The Consciousness Variable",
+          "subhead": "Recent breakthroughs in neural mapping suggest a biological basis for subjective experience, challenging centuries of Cartesian philosophy.",
+          "summary": "A team at the Max Planck Institute has published the most granular map yet of the brain's claustrum — a region long suspected of orchestrating conscious experience. The findings, modest in tone and momentous in implication, reopen a question philosophers had quietly retired.",
+          "author": "Dr. Silas Thorne",
+          "readMinutes": 7,
+          "dateISO": "2026-06-22",
+          "dateline": "LEIPZIG —",
+          "pullQuote": "If consciousness has an address in the cortex, it raises a question philosophy has long avoided: what else has it?",
+          "body": [
+            "The claustrum is a thin, irregular sheet of grey matter pressed between the insular cortex and the basal ganglia. For more than a century it has been described, with some embarrassment, as a structure in search of a function. This week, in a paper of unusual ambition, a research team has proposed that the function in question may be consciousness itself.",
+            "The work, led by Dr. Helena Vogt of the Max Planck Institute for Cognitive and Brain Sciences, combines high-resolution diffusion imaging with optogenetic stimulation in non-human primates. The result is a map of unprecedented detail: a network of bidirectional projections linking nearly every region of the cortex through a single, thread-like organ.",
+            "The implication is striking. If conscious experience requires the binding of disparate sensory and cognitive streams into a single, unified field, the claustrum is uniquely positioned to perform the binding. Stimulate it, and a primate's behaviour shifts in ways that resemble nothing so much as a transient suspension of awareness.",
+            "Philosophers have been cautious in their response. \"A correlate is not a cause,\" noted Professor Daniel Hyland of Oxford. \"But this is the most precise correlate we have ever had.\" The qualification is gentle; the concession, considerable.",
+            "The history of the field counsels humility. Every generation has located the seat of the soul in whatever organ it least understood — the heart, the pineal gland, the frontal lobe. The claustrum may yet join that list of confident errors.",
+            "The paper closes, characteristically, with a list of open questions. Among them: whether the claustrum's role is constitutive or merely facilitative; whether its function differs between species; and whether, in time, its activity might be measured non-invasively in humans.",
+            "For now, the field has its map. What it will draw upon that map remains, as ever, a matter of patience."
+          ]
+        },
+        {
+          "id": "s2",
+          "slug": "india-quantum-testbed",
+          "category": "Science & Technology",
+          "section": "Computing",
+          "headline": "India's First Quantum Testbed Goes Live in Bengaluru",
+          "subhead": "A modest machine, but a milestone — and an open door for the country's researchers.",
+          "summary": "The 24-qubit processor will not break any encryption, but it gives Indian scientists something they have lacked: hardware of their own to fail on.",
+          "author": "Rohan Mehta",
+          "readMinutes": 4,
+          "dateISO": "2026-06-22",
+          "dateline": "BENGALURU —",
+          "body": [
+            "The machine sits in a chilled enclosure colder than deep space, and on Friday it ran its first public computation: a problem that an ordinary laptop could solve in a heartbeat. The point was never the answer.",
+            "India's first home-built quantum testbed, a 24-qubit superconducting processor, is small by the standards of the field's giants. But for the country's researchers, accustomed to renting time on machines an ocean away, it represents something more valuable than raw power: access.",
+            "\"You learn quantum computing by breaking things,\" said one of the project's physicists. \"You cannot break a machine you are only borrowing.\"",
+            "The testbed will be opened to universities on a rotating basis, a deliberate choice to seed a generation of practitioners rather than a single flagship result. Progress, its builders insist, will be measured in trained students, not in qubits."
+          ]
+        }
+      ],
+      "extras": [
+        { "type": "funfact", "title": "Cosmic perspective", "text": "A teaspoon of neutron-star material would weigh about a billion tonnes on Earth — roughly the mass of a mountain." },
+        { "type": "quiz", "question": "Which is the only metal that is liquid at room temperature?", "options": ["Mercury", "Gallium", "Caesium", "Bromine"], "answer": "Mercury", "note": "Bromine is liquid too — but it's a non-metal. Gallium melts in your hand, but just above room temperature." }
       ]
     },
     {
-      "id": "a6",
-      "slug": "cricket-renaissance",
-      "category": "Sports",
-      "section": "Sports",
-      "headline": "The Cricket Renaissance",
-      "subhead": "How technology is rewriting the rulebook of the world's second most popular sport.",
-      "summary": "Ball-tracking, biomechanical analytics and player-load monitoring have moved from broadcast novelty to coaching staple, reshaping training regimens from county grounds in Sussex to the academies of Bengaluru.",
-      "author": "Imran Qureshi",
-      "readMinutes": 9,
-      "dateISO": "2026-06-22",
-      "dateline": "BENGALURU —",
-      "body": [
-        "At the National Cricket Academy in Bengaluru, the nets look much as they always have: red soil, white sightscreens, the soft crack of leather on willow. What has changed is invisible. Each delivery is tracked by a constellation of cameras; each batter wears a sensor stitched into the collar; each evening, the day's data is reviewed by analysts who would not, a decade ago, have had a desk on the premises.",
-        "The result is a sport that knows itself with uncomfortable precision. Bowlers are advised, sometimes against instinct, to alter their wrist position by three degrees. Batters are shown footage of dismissals they did not realise formed a pattern. Selectors, once governed by feel, now wield dashboards.",
-        "Purists complain, as purists do. But the players, on the whole, do not. \"It tells me what my body is doing,\" said the young fast bowler Aryan Joshi after a recent session. \"That used to take ten years to learn.\"",
-        "The renaissance, if that is what it is, has not displaced the game's older virtues. Patience, temperament, the ability to read a pitch in failing light — these remain stubbornly beyond the reach of any algorithm. What technology has changed is the rate at which the rest can be acquired. In a sport that once measured careers in summers, that is no small thing."
+      "n": 7,
+      "slug": "sports",
+      "title": "Sports",
+      "kind": "news",
+      "articles": [
+        {
+          "id": "sp1",
+          "slug": "cricket-renaissance",
+          "category": "Sports",
+          "section": "Cricket",
+          "headline": "The Cricket Renaissance",
+          "subhead": "How technology is rewriting the rulebook of the world's second most popular sport.",
+          "summary": "Ball-tracking, biomechanical analytics and player-load monitoring have moved from broadcast novelty to coaching staple, reshaping training regimens from county grounds in Sussex to the academies of Bengaluru.",
+          "author": "Imran Qureshi",
+          "readMinutes": 6,
+          "dateISO": "2026-06-22",
+          "dateline": "BENGALURU —",
+          "body": [
+            "At the National Cricket Academy in Bengaluru, the nets look much as they always have: red soil, white sightscreens, the soft crack of leather on willow. What has changed is invisible. Each delivery is tracked by a constellation of cameras; each batter wears a sensor stitched into the collar; each evening, the day's data is reviewed by analysts who would not, a decade ago, have had a desk on the premises.",
+            "The result is a sport that knows itself with uncomfortable precision. Bowlers are advised, sometimes against instinct, to alter their wrist position by three degrees. Batters are shown footage of dismissals they did not realise formed a pattern. Selectors, once governed by feel, now wield dashboards.",
+            "The numbers have reached the amateur game, too. Affordable sensors and phone-camera analysis have given club cricketers access to feedback that international players lacked a generation ago.",
+            "Purists complain, as purists do. But the players, on the whole, do not. \"It tells me what my body is doing,\" said the young fast bowler Aryan Joshi after a recent session. \"That used to take ten years to learn.\"",
+            "The renaissance, if that is what it is, has not displaced the game's older virtues. Patience, temperament, the ability to read a pitch in failing light — these remain stubbornly beyond the reach of any algorithm.",
+            "What technology has changed is the rate at which the rest can be acquired. In a sport that once measured careers in summers, that is no small thing."
+          ]
+        },
+        {
+          "id": "sp2",
+          "slug": "marathon-city-stride",
+          "category": "Sports",
+          "section": "Athletics",
+          "headline": "A Marathon City Finds Its Stride",
+          "subhead": "How a once-reluctant metropolis fell in love with the long run.",
+          "summary": "A decade after its first stumbling road race, the city now fields one of Asia's largest marathons — and a running culture that has outgrown the event that started it.",
+          "author": "Kavya Menon",
+          "readMinutes": 4,
+          "dateISO": "2026-06-22",
+          "dateline": "BENGALURU —",
+          "body": [
+            "Ten years ago, the city's first marathon drew a few hundred runners and a great deal of scepticism. This year it closed registration at forty-two thousand, the streets thick before dawn with a crowd that no longer needs convincing.",
+            "The transformation was not the medal but the morning after — the discovery, by tens of thousands, that the habit outlasted the race. Running clubs now meet in every neighbourhood; parks that once emptied at sunset fill again at sunrise.",
+            "Public health officials, rarely given to optimism, point to falling markers of lifestyle disease in the city's fitness-tracking cohorts. Correlation, they caution, is not a finish line.",
+            "Still, on race morning, with the road closed and the city briefly belonging to its citizens on foot, the argument felt settled."
+          ]
+        }
+      ],
+      "extras": [
+        { "type": "standings", "title": "Premier League — Top of the Table", "rows": [
+          { "name": "1. Northbridge United", "detail": "P28  W21  Pts 68" },
+          { "name": "2. Harlow City", "detail": "P28  W20  Pts 64" },
+          { "name": "3. Seaforth Rovers", "detail": "P28  W18  Pts 59" },
+          { "name": "4. Ashvale Athletic", "detail": "P28  W16  Pts 54" }
+        ] },
+        { "type": "quote", "text": "You miss one hundred percent of the shots you don't take.", "author": "Wayne Gretzky" }
+      ]
+    },
+    {
+      "n": 8,
+      "slug": "features",
+      "title": "Features & Human Interest",
+      "kind": "news",
+      "articles": [
+        {
+          "id": "f1",
+          "slug": "last-letter-writer-ballard-estate",
+          "category": "Features & Human Interest",
+          "section": "Human Interest",
+          "headline": "The Last Letter-Writer of Ballard Estate",
+          "subhead": "In a corner of old Bombay, a man still earns his living one sentence at a time.",
+          "summary": "For half a century, Anand has written letters for those who cannot — petitions, love notes, condolences. As his clients dwindle, he reflects on a vanishing intimacy.",
+          "author": "Meher Dastur",
+          "readMinutes": 6,
+          "dateISO": "2026-06-22",
+          "dateline": "MUMBAI —",
+          "pullQuote": "A form asks for facts, he says. A letter asks for the truth.",
+          "body": [
+            "The typewriter is older than most of the buildings around it, and Anand's fingers find its keys without looking. For fifty-one years he has sat beneath the same arcade in Ballard Estate, writing letters for people who could not write their own.",
+            "There were once a dozen like him along this stretch. Now there is one. The petitions and applications that were his bread have migrated to government portals and smartphone screens, and the queue that once formed at his table has thinned to a trickle.",
+            "What remains is the work that no form can do. A woman comes to write to an estranged son; a widower, to a wife twenty years gone. \"A form asks for facts,\" Anand says. \"A letter asks for the truth.\"",
+            "He has been, over the decades, a confessor of sorts — privy to feuds, reconciliations, and secrets that died with their authors. He keeps none of them. \"The words are theirs,\" he says. \"I only lend the spelling.\"",
+            "His children, grown and salaried, have asked him to stop. He has the small pension of a careful man. But he comes each morning still, less for the money than for the rhythm of a life measured in other people's sentences.",
+            "When he retires — soon, he admits — the arcade will lose the last of a trade older than the city itself. The letters will still be written, on glowing screens, by their own authors. Something will be gained. Something, Anand suspects, will be quietly lost."
+          ]
+        },
+        {
+          "id": "f2",
+          "slug": "why-we-still-climb",
+          "category": "Features & Human Interest",
+          "section": "Environment",
+          "headline": "Why We Still Climb",
+          "subhead": "In an age of summit selfies, a veteran mountaineer makes the case for the unphotographed peak.",
+          "summary": "As the great mountains grow crowded, a quieter movement is turning toward the smaller, nameless summits — and rediscovering why anyone climbed in the first place.",
+          "author": "Tenzing Bhotia",
+          "readMinutes": 4,
+          "dateISO": "2026-06-22",
+          "dateline": "MANALI —",
+          "body": [
+            "The famous peaks now have queues. Photographs from the highest places on earth show not solitude but congestion, a line of bright jackets shuffling toward a summit that has become a backdrop.",
+            "Against this, a small counter-current. A growing number of climbers have turned away from the trophy mountains toward the thousands of modest, unnamed summits that surround them — peaks with no record to set and no photograph worth posting.",
+            "\"The mountain does not know it is famous,\" one veteran guide observes. \"That is something only we bring to it.\"",
+            "What they find on the smaller peaks is what the first climbers found: weather, effort, silence, and the particular clarity that comes from being somewhere difficult for no reason anyone can sell."
+          ]
+        }
+      ],
+      "extras": [
+        { "type": "onthisday", "entries": [
+          { "year": "1893", "text": "The first recorded ascent of a Himalayan 'trekking peak' by a local-guided party is documented." },
+          { "year": "1969", "text": "The novelist's craft is honoured as the Booker Prize is established." }
+        ] },
+        { "type": "funfact", "title": "Small wonder", "text": "The handwritten letter is over 2,000 years old — and studies suggest writing one by hand still calms the nervous system more than typing." }
+      ]
+    },
+    {
+      "n": 9,
+      "slug": "opinion",
+      "title": "Opinion & Editorials",
+      "kind": "opinion",
+      "articles": [
+        {
+          "id": "o1",
+          "slug": "editorial-architecture-of-patience",
+          "category": "Opinion",
+          "section": "Editorial",
+          "headline": "On the Architecture of Patience",
+          "subhead": "The best public works are the ones we never notice — and that is precisely why we underfund them.",
+          "summary": "The week's news, from rain-resilient cities to a reawakened railway, shares a quiet lesson: the infrastructure that serves us best is the infrastructure that asks for no applause.",
+          "author": "The Editorial Board",
+          "readMinutes": 5,
+          "dateISO": "2026-06-22",
+          "dateline": "",
+          "pullQuote": "A drain that prevents a flood will never be thanked; a flood that overwhelms a city will never be forgiven.",
+          "body": [
+            "There is a particular injustice at the heart of public works: the better they function, the less we notice them. A drain that prevents a flood will never be thanked. A flood that overwhelms a city will never be forgiven. The politics of infrastructure are, in this sense, rigged against competence.",
+            "This week's pages offer a quiet rebuttal. In the Deccan, engineers have spent unglamorous crores giving the monsoon 'somewhere to go.' In Delhi, a city recovered a railway it had forgotten it owned. Neither will trend; both will matter for decades.",
+            "The lesson is not that spectacle is worthless, but that we have built our incentives around it. We fund the ribbon-cutting more readily than the maintenance, the new line more readily than the repaired one.",
+            "A mature republic learns to reward the architecture of patience — the slow, invisible work whose only monument is the disaster that did not happen.",
+            "We would do well, this season, to thank the drains."
+          ]
+        },
+        {
+          "id": "o2",
+          "slug": "column-republic-at-seventy-seven",
+          "category": "Opinion",
+          "section": "Guest Column",
+          "headline": "A Letter to the Republic at Seventy-Seven",
+          "subhead": "What a constitution promises, and what a citizenry must keep.",
+          "summary": "A historian reflects on the distance between the document we inherited and the country we practise — and argues that the gap is not a failure but a task.",
+          "author": "Dr. Nalini Krishnan",
+          "readMinutes": 4,
+          "dateISO": "2026-06-22",
+          "dateline": "",
+          "body": [
+            "A constitution is a promise a country makes to itself, and like all promises it is kept not once but daily. We tend to speak of ours in the past tense, as a thing achieved in 1950. It is better understood as a thing attempted every morning since.",
+            "The distance between the document and the practice is real. But a promise is not discredited by the difficulty of keeping it; it is defined by it.",
+            "Each generation inherits the gap and is asked, quietly, to narrow it. That is not a failure of the founders. It is the assignment they left us.",
+            "At seventy-seven, the republic is neither the utopia of its preamble nor the cynic's disappointment. It is a work in progress — which is the only honest thing a free country can be."
+          ]
+        }
+      ],
+      "extras": [
+        { "type": "letter", "author": "R. Krishnamurthy", "city": "Chennai", "text": "Your coverage of the data bill rightly notes the two-tier consent regime. But spare a thought for the small firm, for whom compliance is not a department but a founder's sleepless night." },
+        { "type": "letter", "author": "Anjali Bose", "city": "Kolkata", "text": "As a daily commuter, I welcome the Ring Rail's return. I only ask that we remember the hawkers who kept those platforms alive through thirty years of neglect." },
+        { "type": "quote", "text": "The price of freedom is eternal vigilance.", "author": "commonly attributed to Thomas Jefferson" }
+      ]
+    },
+    {
+      "n": 10,
+      "slug": "miscellany",
+      "title": "Facts, Lifestyle & Living",
+      "kind": "miscellany",
+      "articles": [
+        {
+          "id": "m1",
+          "slug": "case-for-the-evening-walk",
+          "category": "Lifestyle",
+          "section": "Living Well",
+          "headline": "The Case for the Evening Walk",
+          "subhead": "The oldest exercise in the world is enjoying a quiet, well-earned revival.",
+          "summary": "No equipment, no subscription, no app required: the humble after-dinner stroll turns out to be one of the most evidence-backed habits available.",
+          "author": "Dr. Ayesha Khan",
+          "readMinutes": 3,
+          "dateISO": "2026-06-22",
+          "dateline": "",
+          "body": [
+            "It costs nothing, requires no equipment, and can be done almost anywhere — which may be exactly why we underrate it. The evening walk, that most unremarkable of habits, has accumulated a remarkable body of evidence in its favour.",
+            "A short stroll after a meal helps regulate blood sugar, eases digestion, and — perhaps most valuably in a wired age — separates the day from the night, signalling to an overstimulated mind that the work is done.",
+            "The dose is forgiving. Ten minutes is meaningfully better than none; thirty is plenty. The only equipment is a pair of shoes and the willingness to leave the screen behind.",
+            "In an industry forever selling the next complicated thing, the simplest prescription endures: go outside, and walk."
+          ]
+        }
+      ],
+      "extras": [
+        { "type": "factcheck", "claim": "We only use 10% of our brains.", "verdict": "False", "explanation": "Brain imaging shows that, over the course of a day, virtually all of the brain is active. The myth is persistent but has no basis in neuroscience." },
+        { "type": "quiz", "question": "Which planet has the most moons?", "options": ["Jupiter", "Saturn", "Uranus", "Neptune"], "answer": "Saturn", "note": "Saturn overtook Jupiter after a 2023 discovery brought its confirmed count past 140." },
+        { "type": "puzzle", "kind": "Riddle", "prompt": "I speak without a mouth and hear without ears. I have no body, but I come alive with the wind. What am I?", "answer": "An echo." },
+        { "type": "review", "medium": "Book", "title": "The Remains of the Day", "creator": "Kazuo Ishiguro", "rating": 5, "text": "A butler's road trip becomes a quiet reckoning with duty, dignity and the love one talks oneself out of. Restraint has rarely cut so deep." },
+        { "type": "review", "medium": "Film", "title": "Tokyo Story", "creator": "Yasujirō Ozu", "rating": 5, "text": "An elderly couple visits children too busy to receive them. Seventy years on, Ozu's portrait of generational drift remains almost unbearably tender." },
+        { "type": "healthtip", "title": "Hydration", "text": "Thirst lags behind need. Keep water in sight at your desk — visibility, studies find, is a better prompt than willpower." },
+        { "type": "funfact", "title": "Word of the day", "text": "'Petrichor' — the earthy scent of rain on dry soil — was coined by two Australian scientists in 1964, from the Greek for 'stone' and the 'fluid that flows in the veins of the gods'." },
+        { "type": "weather", "city": "New Delhi", "temp": "28°C", "conditions": "Clear skies, light evening breeze" }
       ]
     }
   ]

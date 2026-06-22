@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as ArchiveRouteImport } from './routes/archive'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as PageNRouteImport } from './routes/page.$n'
 import { Route as ArticleSlugRouteImport } from './routes/article.$slug'
 
 const ArchiveRoute = ArchiveRouteImport.update({
@@ -23,6 +24,11 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PageNRoute = PageNRouteImport.update({
+  id: '/page/$n',
+  path: '/page/$n',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ArticleSlugRoute = ArticleSlugRouteImport.update({
   id: '/article/$slug',
   path: '/article/$slug',
@@ -33,30 +39,34 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/archive': typeof ArchiveRoute
   '/article/$slug': typeof ArticleSlugRoute
+  '/page/$n': typeof PageNRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/archive': typeof ArchiveRoute
   '/article/$slug': typeof ArticleSlugRoute
+  '/page/$n': typeof PageNRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/archive': typeof ArchiveRoute
   '/article/$slug': typeof ArticleSlugRoute
+  '/page/$n': typeof PageNRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/archive' | '/article/$slug'
+  fullPaths: '/' | '/archive' | '/article/$slug' | '/page/$n'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/archive' | '/article/$slug'
-  id: '__root__' | '/' | '/archive' | '/article/$slug'
+  to: '/' | '/archive' | '/article/$slug' | '/page/$n'
+  id: '__root__' | '/' | '/archive' | '/article/$slug' | '/page/$n'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ArchiveRoute: typeof ArchiveRoute
   ArticleSlugRoute: typeof ArticleSlugRoute
+  PageNRoute: typeof PageNRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -75,6 +85,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/page/$n': {
+      id: '/page/$n'
+      path: '/page/$n'
+      fullPath: '/page/$n'
+      preLoaderRoute: typeof PageNRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/article/$slug': {
       id: '/article/$slug'
       path: '/article/$slug'
@@ -89,6 +106,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ArchiveRoute: ArchiveRoute,
   ArticleSlugRoute: ArticleSlugRoute,
+  PageNRoute: PageNRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
