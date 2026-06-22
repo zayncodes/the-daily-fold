@@ -13,32 +13,35 @@ export function Masthead({ compact = false }: { compact?: boolean }) {
         </div>
         <div className="col-span-12 md:col-span-6 text-center">
           <Link to="/" className="inline-block">
-            <h1 className={`masthead whitespace-nowrap ${compact ? "text-4xl md:text-6xl" : "text-5xl md:text-7xl lg:text-8xl"}`}>
+            <h1 className={`masthead animate-masthead whitespace-nowrap ${compact ? "text-4xl md:text-6xl" : "text-5xl md:text-7xl lg:text-8xl"}`}>
               The Chronicle
             </h1>
           </Link>
         </div>
         <div className="col-span-12 md:col-span-3 meta text-left md:text-right leading-relaxed">
           <div>{date}</div>
-          <div className="mt-1 italic text-[color:var(--color-accent)] not-italic" style={{ fontStyle: "italic" }}>
-            Edition: International Premier
-          </div>
+          <div className="mt-1 text-[color:var(--color-accent)]">Edition No. {ed.number}</div>
         </div>
       </div>
 
       <div className="rule-double flex flex-wrap items-center justify-between gap-3 meta">
         <div className="flex items-center gap-4">
-          <span>{ed.weather.temp} · {ed.weather.conditions}</span>
+          <span>{ed.weather.temp} · {ed.weather.conditions} · {ed.weather.city}</span>
           <span className="hidden md:inline italic" style={{ fontFamily: "var(--font-serif)", textTransform: "none", letterSpacing: 0, fontSize: "0.85rem" }}>
             "{ed.quote.text}" — {ed.quote.author}
           </span>
         </div>
         <div className="flex items-center gap-4">
-          <span>Price: ₹15.00</span>
-          <span>Archive No. {ed.number}</span>
+          <span>Price ₹15.00</span>
+          <span>Vol. {ed.volume} · No. {ed.issue}</span>
         </div>
       </div>
 
+      <nav className="flex items-center justify-center gap-5 py-3 meta border-b border-[color:var(--color-rule)]">
+        <Link to="/" className="link-underline">Front Page</Link>
+        <span aria-hidden="true" className="text-[color:var(--color-rule)]">·</span>
+        <Link to="/archive" className="link-underline">Archive</Link>
+      </nav>
     </header>
   );
 }

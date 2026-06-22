@@ -14,7 +14,16 @@ dist-ssr
 .vinxi
 .tanstack/**
 .nitro
+.vercel
 *.local
+
+# Local environment / secrets
+.env
+.env.*
+!.env.example
+
+# Claude Code local config
+.claude/
 
 # Wrangler / Cloudflare
 .wrangler/

@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Masthead } from "@/components/Masthead";
+import { Reveal } from "@/components/Reveal";
 import { todaysEdition, type Article } from "@/lib/articles";
 
 export const Route = createFileRoute("/")({
@@ -25,7 +26,7 @@ function FrontPage() {
 
   return (
     <div className="min-h-screen bg-[color:var(--color-paper)]">
-      <div className="mx-auto max-w-[1280px] px-6 md:px-10">
+      <div className="mx-auto max-w-[1440px] px-6 md:px-10">
         <Masthead />
 
         {/* Front page grid */}
@@ -70,16 +71,16 @@ function FrontPage() {
 
           {/* Right column stack */}
           <aside className="col-span-12 md:col-span-5 space-y-8">
-            <FrontSnippet article={national2} />
+            <Reveal><FrontSnippet article={national2} /></Reveal>
             <Divider />
-            <FrontSnippet article={intl1} />
+            <Reveal delay={0.08}><FrontSnippet article={intl1} /></Reveal>
             <Divider />
-            <FrontSnippet article={intl2} />
+            <Reveal delay={0.16}><FrontSnippet article={intl2} /></Reveal>
           </aside>
         </main>
 
         {/* Below the fold */}
-        <section className="grid grid-cols-12 gap-8 border-t-[3px] border-double border-[color:var(--color-ink)] py-10">
+        <Reveal as="section" className="grid grid-cols-12 gap-8 border-t-[3px] border-double border-[color:var(--color-ink)] py-10">
           <article id="feature" className="col-span-12 md:col-span-7">
             <Link to="/article/$slug" params={{ slug: feature.slug }} className="block group">
               <div className="eyebrow mb-3">{feature.category} · {feature.section}</div>
@@ -120,9 +121,9 @@ function FrontPage() {
               <span>By {sports.author}</span><span>·</span><span>{sports.readMinutes} min read</span>
             </div>
           </article>
-        </section>
+        </Reveal>
 
-        <footer className="border-t border-[color:var(--color-ink)] py-10 mt-6 grid grid-cols-12 gap-6 meta">
+        <Reveal as="footer" className="border-t border-[color:var(--color-ink)] py-10 mt-6 grid grid-cols-12 gap-6 meta">
           <div className="col-span-12 md:col-span-4">
             <div className="masthead text-2xl">The Chronicle</div>
             <p className="mt-2" style={{ fontFamily: "var(--font-serif)", textTransform: "none", letterSpacing: 0 }}>
@@ -145,7 +146,7 @@ function FrontPage() {
             <span>© {new Date().getFullYear()} The Chronicle</span>
             <span>Set in Playfair Display, Lora & Inter</span>
           </div>
-        </footer>
+        </Reveal>
       </div>
     </div>
   );

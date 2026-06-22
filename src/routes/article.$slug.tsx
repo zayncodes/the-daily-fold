@@ -2,6 +2,7 @@ import { createFileRoute, Link, useNavigate, notFound } from "@tanstack/react-ro
 import { useEffect } from "react";
 import { Masthead } from "@/components/Masthead";
 import { ReadingProgress } from "@/components/ReadingProgress";
+import { useSwipe } from "@/hooks/use-swipe";
 import {
   formatLongDate,
   getArticleBySlug,
@@ -54,6 +55,9 @@ function ArticlePage() {
   const { prev, next, index, total } = getArticleNeighbors(article.slug);
   const navigate = useNavigate();
 
+  const goTo = (slug?: string) => slug && navigate({ to: "/article/$slug", params: { slug } });
+  const swipe = useSwipe(() => goTo(next?.slug), () => goTo(prev?.slug));
+
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "ArrowRight" && next) {
@@ -69,7 +73,7 @@ function ArticlePage() {
   return (
     <div className="min-h-screen">
       <ReadingProgress />
-      <div className="mx-auto max-w-[1280px] px-6 md:px-10">
+      <div className="mx-auto max-w-[1440px] px-6 md:px-10" {...swipe}>
         <Masthead compact />
 
         {/* Page indicator */}
@@ -121,6 +125,24 @@ function ArticlePage() {
               )}
             </div>
           </div>
+
+          {article.sourceName && (
+            <div className="col-span-12 mt-2 meta">
+              Source:{" "}
+              {article.sourceUrl ? (
+                <a
+                  href={article.sourceUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="link-underline"
+                >
+                  {article.sourceName}
+                </a>
+              ) : (
+                article.sourceName
+              )}
+            </div>
+          )}
         </article>
 
         {/* Page-turn navigation */}

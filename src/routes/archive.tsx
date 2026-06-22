@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useMemo, useState } from "react";
 import { Masthead } from "@/components/Masthead";
+import { Reveal } from "@/components/Reveal";
 import { editions, formatLongDate } from "@/lib/articles";
 
 export const Route = createFileRoute("/archive")({
@@ -39,7 +40,7 @@ function ArchivePage() {
 
   return (
     <div className="min-h-screen">
-      <div className="mx-auto max-w-[1280px] px-6 md:px-10">
+      <div className="mx-auto max-w-[1440px] px-6 md:px-10">
         <Masthead compact />
 
         <section className="py-12">
@@ -83,8 +84,8 @@ function ArchivePage() {
           </section>
         ) : (
           <section className="border-t border-[color:var(--color-ink)] py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {editions.map((ed) => (
-              <article key={ed.number} className="paper-card border border-[color:var(--color-rule)] p-6 flex flex-col">
+            {editions.map((ed, i) => (
+              <Reveal as="article" key={ed.number} delay={i * 0.06} className="paper-card border border-[color:var(--color-rule)] p-6 flex flex-col">
                 <div className="meta flex justify-between">
                   <span>Vol. {ed.volume} · No. {ed.issue}</span>
                   <span>Ed. {ed.number}</span>
@@ -104,7 +105,7 @@ function ArchivePage() {
                     Open this edition →
                   </Link>
                 </div>
-              </article>
+              </Reveal>
             ))}
           </section>
         )}
